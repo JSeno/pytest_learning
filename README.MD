@@ -11,6 +11,7 @@
 #### Algumas bibliotecas e como instalar:
 
 ```bash
+
 # O pytest é uma biblioteca de testes automatizados.
  pip install pytest
 
@@ -31,12 +32,34 @@
 
 ```
 -----
-#### Preparando o ambiente:
+&nbsp;  
+
+### Preparando o ambiente:&nbsp;    
+
 
 Após isso deve ser instalado um diretório de testes, onde serão armazenados os testes chamado de `tests`.&nbsp;  
+
 Quando for criar um arquivo de teste, ele deve ser criando dentro da pasta `tests` e com o nome `test_*.py`.&nbsp;  
 Por exemplo:&nbsp;  
- `test_hello_world.py`
+ `test_hello_world.py`&nbsp;  
+ &nbsp;  
+
+
+ É utilizado o pytest para testar os retornos das funções. Para isso, é necessário criar uma função com o nome de:&nbsp;  
+    `def test_hello_world():`&nbsp;
+    e no retorno é utilizado o assert para verificar se o retorno da função é o esperado.&nbsp;  
+    Por exemplo:&nbsp;  
+    &nbsp;
+
+
+```python
+def test_hello_world():
+    assert hello_world() == 'Hello World!'
+```
+
+     
+
+
 
 
 
